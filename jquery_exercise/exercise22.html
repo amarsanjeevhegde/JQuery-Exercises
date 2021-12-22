@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src = "jquery-3.6.0.min.js"> </script>
+<script>
+var x = 0;
+$(document).ready(function(){
+  $("input").keypress(function(){
+    $("span").text(x += 1);
+  });
+});
+</script>
+</head>
+<body>
+<h2> jquery keypress() method </h2>
+<h3> It is an example of using the keypress() method </h3>
+
+Enter sentence: <input type = "text">
+
+<p> Key is pressed <span> 0 </span> times. </p>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Get to know what user puts in text field</title>
+</head>
+<body>
+
+<p>Get to know what user puts in text field</p>
+<p>Check inspect and click console to see the solution output.</p>
+
+<input type="text" value="Write something here" id="usertext"/>
+
+<script src="jquery-3.6.0.min.js"></script>
+<script>
+    $('input#usertext').keyup(function () {
+    var textvalue = $(this).val();
+    console.log(textvalue);
+ });
+</script>
+
+</body>
+</html>

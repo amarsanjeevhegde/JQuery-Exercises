@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>jQuery makeArray()</title>
+<script src = "jquery-3.6.0.min.js"> </script>
+</head>
+
+<body>
+
+<h1>jQuery makeArray() method</h1>
+
+<h3> It is an example of using the makeArray() method. </h3>
+<p> It is paragraph 1 </p>
+<p> It is paragraph 2 </p>
+<p> It is paragraph 3 </p>
+<p> It is paragraph 4 </p>
+<p> It is paragraph 5 </p>
+<span> Click the below button to see the effect. </span>
+</br>
+</br>
+<button> Click me </button>
+<b> </b>
+
+<script>
+$("document").ready(function(){
+$("button").click(function(){
+var arr = $.makeArray($("p"));
+arr.reverse();
+$("b").append(arr);
+});
+});
+</script>
+</body>
+
+</html>

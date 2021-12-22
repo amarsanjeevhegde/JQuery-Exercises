@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.6.0.min.js"></script>
+<script>
+function new_div() {
+$(document).ready(function() {
+  var test = {
+    id: "div",
+    class: "divclass",
+    css: {
+      "color": "Green"
+    }
+  };
+  var $div = $("<div>", test);
+  $div.html("New Division");
+  $("body").append($div);
+});
+}
+</script>
+<meta name="viewport" content="width=device-width">
+</head>
+<title>Create a division using jQuery with style tag</title>
+
+<body>
+<p>You may use this domain in examples without prior coordination or asking for permission.</p>
+    <input type="button" value="Click to add new division" onclick="new_div()" />
+</body>
+</html>

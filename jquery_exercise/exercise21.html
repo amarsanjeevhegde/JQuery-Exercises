@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title> jQuery filter() method </title>
+
+<style>
+div{
+font-size: 20px;
+font-weight: bold;
+}
+</style>
+<script src="jquery-3.6.0.min.js"></script>
+<script>
+function fun(){
+$(document).ready(function(){
+  $("p").filter(".para").css({"background": "pink"});
+});
+}
+</script>
+</head>
+
+<body> 
+<h2> jquery filter() method </h2>   
+<h4>This is an example of using the jQuery's filter() method. </h4>
+  <div id = "div1"> This is first div element. </div>
+     <p class = "para"> This is first paragraph element </p>
+     <div id = "div2"> This is second div element. </div>
+     <p class = "para"> This is second paragraph element </p>
+     <p class = "para"> This is third paragraph element </p>
+<p> Click the following button to see the effect. </p>
+
+<button onclick = "fun()"> click me </button>
+</body>
+</html>

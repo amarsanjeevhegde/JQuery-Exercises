@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("tr:odd").addClass("zebra");
+});
+</script>
+<style type="text/css">
+    .table_style {
+       width: 500px;
+       margin: 0px auto;
+   }
+   table{
+       width: 100%;
+       border-collapse: collapse;
+   }
+   table tr td{
+       width: 50%;
+       border: 1px solid #c00eec;
+       padding: 5px;
+   }
+   table tr th{
+       border: 1px solid #c00eec;
+       padding: 5px;
+   }
+   .zebra{
+       background-color: #c00eec;
+   }
+     </style>
+     <title>zebra table</title>
+   </head>
+   <body>
+   <div class="table_style">
+       <table>
+           <tr>
+               <th>Student Name</th>
+               <th>Marks in Science</th>
+           </tr>
+           <tr>
+               <td>Janet</td>
+               <td>85.00</td>
+           </tr>
+           <tr>
+               <td>David</td>
+               <td>92.00</td>
+           </tr>
+           <tr>
+               <td>Arthur</td>
+               <td>79.00</td>
+           </tr>
+           <tr>
+               <td>Bill</td>
+               <td>82.00</td>
+           </tr>
+           </table>
+   </div>
+   </body>
+   </html>

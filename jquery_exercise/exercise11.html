@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Changing the attribute of the box</title>
+</head>
+<body>
+
+
+<p>delay() method sets diffrent speed values.</p>
+
+<button>Click to see the boxes</button>
+<div id="div1" style="width: 100px;height: 90px;display:none;background-color: #21d811;"></div><br>
+<div id="div2" style="width: 100px;height: 90px;display: none;background-color: #c7610d;"></div><br>
+<div id="div3" style="width: 100px;height: 90px;display: none;background-color: #05149c;"></div><br>
+
+<script src="jquery-3.6.0.min.js"></script>
+
+<script>
+    $('button').click(function () {
+    $('#div1').delay(800).fadeIn();
+    $('#div2').delay(2400).fadeIn();
+    $('#div3').delay(4000).fadeIn();
+  });
+</script>
+
+</body>
+</html>

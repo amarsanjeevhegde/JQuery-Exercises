@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Print Page</title>
+</head>
+<body>
+
+<p> I want to print this page very badly</p>
+
+<a class="printPage" href="#">Print</a>
+
+<script src="jquery-3.6.0.min.js"></script>
+
+<script>
+    $('a.printPage').click(function () {
+   window.print();
+});
+</script>
+</body>
+</html>

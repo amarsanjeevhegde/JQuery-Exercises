@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> jQuery get() method </title>
+
+<script src = "jquery-3.6.0.min.js"> </script>
+</head>
+
+<body>
+<h1> This is an example of using the jquery get() method </h1>
+<p> Click the following button to see the effect. </p>
+<button> Click me </button>
+<p id = "p1"> </p>
+<p id = "p2"> </p>
+<script>
+$(document).ready(function() {
+$("button").click(function() {
+$.get("test.html", function(data,status) {
+document.getElementById("p1").innerHTML = data;
+document.getElementById("p2").innerHTML = "Status: " + status;
+});
+});
+});
+</script>
+</body>
+
+</html>

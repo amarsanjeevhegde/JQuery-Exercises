@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title> jquery children() method </title>
+
+<style>
+.main * { 
+  display: block;
+  font-size: 20px;
+  position: relative;
+  border: 2px solid black;
+  color: black; 
+  padding: 10px;
+  margin: 17px;
+}
+</style>
+<script src="jquery-3.6.0.min.js"></script>
+<script>
+function fun(){
+$(document).ready(function(){
+  $("div").children().css({ "font-size": "30px", "color": "red", "border": "6px dashed red"});
+});
+}
+</script>
+</head>
+
+<body class = "main"> jquery children() method
+  <div id = "div1"> div element
+      <ul> First ul element
+      <h2> Heading h2 </h2>
+	  </ul>
+	  <ul> Second ul element
+          <p> Paragraph element </p>
+		  </ul>
+	</div>
+<button onclick = "fun()"> click me </button>
+  </body>
+</html>
